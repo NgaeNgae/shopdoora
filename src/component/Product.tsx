@@ -187,7 +187,7 @@ const Product = () => {
                         <h2 className='text-xl max-md:text-sm max-md:w-full w-[60%]'>{category.subTitle}</h2>
                         </div>
                         <Swiper
-                        className='w-[100%] max-md:hidden max-sm:hidden backdrop-blur-md h-full slide2'
+                        className='w-[100%] max-lg:hidden max-md:hidden max-sm:hidden backdrop-blur-md h-full slide2'
                          slidesPerView={5}
                          spaceBetween={10}
                          loop={true}
