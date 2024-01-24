@@ -9,7 +9,7 @@ import SpecialOffer from './component/SpecialOffer';
 
 function App() {
   return (
-    <div className="App text-[#4A5568] overflow-x-hiden">
+    <div className="App text-[#4A5568] overflow-x-hidden">
         <Home/>
         <div className='px-32 max-sm:px-5 gap-5 mx-auto'>
         <BestDeal/>
