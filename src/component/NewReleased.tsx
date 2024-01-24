@@ -29,13 +29,13 @@ const NewReleased = () => {
     <h1 className='font-bold text-4xl tracking-wider'><span className='text-red-500'>New </span><span>Relesed</span></h1>
         <h2 className="">Try Our Latest Flavors Here</h2>
     </header>
-    <div className='flex max-sm:block max-sm:gap-10 gap-2'>
+    <div className='flex max-sm:block max-md:flex-wrap max-sm:gap-10 max-md:gap-y-7 gap-2'>
       {
                 products.map((product,index) => {
                   return (
-                    <div key={index} className="w-[25%] shadow-lg transform active:scale-90 transition-transform max-sm:w-[90%] max-sm:my-5 max-sm:mx-auto relative rounded-lg">
+                    <div key={index} className="w-[25%] max-md:w-[49%] shadow-lg transform active:scale-90 transition-transform max-sm:w-[90%] max-sm:my-5 max-sm:mx-auto relative rounded-lg">
                       <img className='rounded-xl' src={product.src} alt="" />
-                      <div className='absolute bottom-0 w-[59%] p-4'>
+                      <div className='absolute max-md:text-sm max-md:w-[70%] bottom-0 w-[59%] p-4'>
                         <p>{product.name}</p>
                         <p>{product.price} MMK</p>
                       </div>

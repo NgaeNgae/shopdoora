@@ -29,8 +29,13 @@ code {
   top: 50%;
 }
 
-.slide2 .swiper-button-prev, .slide3 .swiper--prev {
+.slide2 .swiper-button-prev, .slide4 .swiper-button-prev{
   display:none;
+}
+.slide4 .swiper-button-next {
+  position: absolute;
+  top: 50%;
+  left: 65%;
 }
 .slide3 .swiper-button-prev {
   position: absolute;
@@ -52,12 +57,22 @@ code {
   right: 46%;
   top: 50%;
 }
+@media only screen and (max-width: 768px) {
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    color:rgb(207, 223, 223);
+    background-color: black;
+    padding: 15px 7px;
+    border-radius: 10px;
+    opacity: 70%;
+  }
+  }
 @media only screen and (max-width: 600px) {
 .swiper-button-prev::after,
 .swiper-button-next::after {
   color:rgb(207, 223, 223);
   background-color: black;
-  padding: 20px 10px;
+  padding: 20px 7px;
   border-radius: 10px;
   opacity: 70%;
 }

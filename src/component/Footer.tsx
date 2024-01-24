@@ -8,13 +8,13 @@ import {CiPhone} from "react-icons/ci"
 const Footer = () => {
   return (
     <>
-        <div className='my-10 max-sm:grid-cols-2 max-sm:grid-rows-12 grid-flow-col max-sm:h-[28rem] h-60 gap-5 grid grid-cols-4 grid-rows-5'>
-            <div className='text-sm row-span-3 max-sm:row-span-3'>
+        <div className='my-10 max-md:h-[25rem] max-md:grid-cols-3 max-md:grid-rows-12 max-sm:grid-cols-2 max-sm:grid-rows-12 grid-flow-col max-sm:h-[28rem] h-60 gap-5 grid grid-cols-4 grid-rows-5'>
+            <div className='text-sm row-span-3 max-md:row-span-4 max-sm:row-span-3'>
               <h1 className="text-lg">Customer Service</h1>
                 <p className="my-3 flex items-center gap-2"><MdOutlinePrivacyTip/> Terms & Privacy Policy</p>
                 <p className="flex items-center gap-2"><IoReload/> Return Policy</p>
             </div>
-            <div className='row-span-2 max-sm:row-span-3'>
+            <div className='row-span-2 max-md:row-span-4 max-sm:row-span-3'>
             <h1 className="text-lg mb-3">Payment</h1>
             <img className="w-1/4 mr-2 rounded-md h-1/2 inline" src={kbzpay} alt="" />
             <img className="w-1/4 h-1/2 rounded-md inline" src={wave} alt="" />
@@ -34,7 +34,7 @@ const Footer = () => {
                     <label htmlFor="">English</label>
                    </div>
             </div>
-            <div className='row-span-2 max-sm:row-span-2'>
+            <div className='row-span-2 max-md:row-span-3 max-sm:row-span-2'>
             <h1 className="text-lg mb-3">Follow Us On</h1>
             <div className="flex gap-3 text-3xl">
             <IoLogoFacebook/>
@@ -44,7 +44,7 @@ const Footer = () => {
             <IoLogoTwitter/>
             </div>
             </div>
-            <div className='row-span-3 max-sm:row-span-6'>
+            <div className='row-span-3 max-md:row-span-8 max-sm:row-span-6'>
             <h1 className="text-lg mb-3">Contus Us</h1>
                 <p className="gap-2 my-3 items-start flex"><IoLocationOutline className="text-6xl mt-[-20px]"/>Lay Daunt Kan Main Road, Cashmere Stop, Near Zawana, Thingangyun Tsp, Yangon</p>
                 <p className="gap-2 items-start flex"><CiPhone className="text-2xl mt-[-4px]"/>09458489458</p>
