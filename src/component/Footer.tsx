@@ -16,8 +16,8 @@ const Footer = () => {
             </div>
             <div className='row-span-2 max-sm:row-span-3'>
             <h1 className="text-lg mb-3">Payment</h1>
-            <img className="w-1/4 mr-2 h-1/2 inline" src={kbzpay} alt="" />
-            <img className="w-1/4 h-1/2 inline" src={wave} alt="" />
+            <img className="w-1/4 mr-2 rounded-md h-1/2 inline" src={kbzpay} alt="" />
+            <img className="w-1/4 h-1/2 rounded-md inline" src={wave} alt="" />
             </div>
             <div className='row-span-3 max-sm:row-span-4 text-sm'>
                 <h1 className="text-lg">Language</h1>

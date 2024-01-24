@@ -41,6 +41,7 @@ code {
   left: 50%;
   top: 50%;
 }
+
  .slide .swiper-button-prev {
   position: absolute;
   left: 2%;
@@ -51,7 +52,26 @@ code {
   right: 46%;
   top: 50%;
 }
-
+@media only screen and (max-width: 600px) {
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color:rgb(207, 223, 223);
+  background-color: black;
+  padding: 20px 10px;
+  border-radius: 10px;
+  opacity: 70%;
+}
+.slide .swiper-button-prev {
+  position: absolute;
+  left:2%;
+  top: 50%;
+}
+.slide .swiper-button-next{
+  position: absolute;
+  right: 50%;
+  top: 50%;
+}
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

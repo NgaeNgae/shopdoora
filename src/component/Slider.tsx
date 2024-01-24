@@ -47,7 +47,7 @@ const Slider = () => {
                       <h2 className='text-lg font-extralight'>The Best Look</h2>
                       <h1 className='text-4xl font-bold'>{slider.title }</h1>
                       <h3 className='text-lg font-extralight my-3'>Starts from 10,000 MMK</h3>
-                      <button className='bg-gray-900/70 px-8 py-2 rounded-full'>view</button>
+                      <button className='bg-gray-900/70 shadow-lg transform active:scale-90 transition-transform px-8 py-2 rounded-full'>view</button>
                       </div>
 
                 </div>

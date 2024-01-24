@@ -69,7 +69,7 @@ const BestDeal = () => {
             }
         </div>
         <div className="flex flex-col items-center">
-        <button className="px-20 py-2 bg-gray-200 flex items-center justify-center rounded-full">View More <span><FaChevronRight/></span></button>
+        <button className="px-20 py-2 bg-gray-200 flex items-center justify-center rounded-full shadow-lg transform active:scale-90 transition-transform">View More <span><FaChevronRight/></span></button>
         </div>
     </>
   )

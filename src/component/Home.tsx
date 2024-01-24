@@ -49,20 +49,20 @@ const Home = () => {
             <h1 className='text-3xl font-bold'>LOGO</h1>
 </section>
           <section className='text-2xl flex gap-3'>
-          <AiOutlineSearch />
-          <AiOutlineShopping/>
-          <AiOutlineMenu/>
+          <AiOutlineSearch className='shadow-lg transform active:scale-90 transition-transform' />
+          <AiOutlineShopping className='shadow-lg transform active:scale-90 transition-transform'/>
+          <AiOutlineMenu className='shadow-lg transform active:scale-90 transition-transform'/>
           </section>
         </nav>
           {sliders.map((slider,index) => {
             return (
               <SwiperSlide className='mb-10' key={index}>
-                <div style={{backgroundImage: `url(${slider.src})`}}  className='w-full items-end max-sm:items-center flex bg-cover max-sm:h-[800px] h-[580px]'>
+                <div style={{backgroundImage: `url(${slider.src})`}}  className='w-full items-end max-sm:items-center flex bg-cover max-sm:h-[500px] h-[580px]'>
                       <div className='mx-auto tracking-wider gap-10 p-9 text-center text-white'>
                       <h2 className='text-2xl font-extralight'>The Best Look</h2>
-                      <h1 className='text-6xl font-semibold'>{slider.title }</h1>
+                      <h1 className='text-6xl max-sm:text-4xl font-semibold'>{slider.title }</h1>
                       <h3 className='text-xl font-extralight my-3'>Starts from 10,000 MMK</h3>
-                      <button className='bg-gray-900/70 px-8 py-2 rounded-full'>view</button>
+                      <button className='bg-gray-900/70 px-8 py-2 rounded-full shadow-lg transform active:scale-90 transition-transform'>view</button>
                       </div>
 
                 </div>

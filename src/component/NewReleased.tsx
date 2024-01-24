@@ -33,7 +33,7 @@ const NewReleased = () => {
       {
                 products.map((product,index) => {
                   return (
-                    <div key={index} className="w-[25%] max-sm:w-[90%] max-sm:my-5 max-sm:mx-auto relative rounded-lg">
+                    <div key={index} className="w-[25%] shadow-lg transform active:scale-90 transition-transform max-sm:w-[90%] max-sm:my-5 max-sm:mx-auto relative rounded-lg">
                       <img className='rounded-xl' src={product.src} alt="" />
                       <div className='absolute bottom-0 w-[59%] p-4'>
                         <p>{product.name}</p>
@@ -46,7 +46,7 @@ const NewReleased = () => {
 
     </div>
     <div className="flex flex-col my-5 items-center">
-    <button className="px-20 py-2 bg-gray-200 flex items-center justify-center rounded-full">View More <span><FaChevronRight/></span></button> 
+    <button className="shadow-lg transform active:scale-90 transition-transform px-20 py-2 bg-gray-200 flex items-center justify-center rounded-full">View More <span><FaChevronRight/></span></button> 
     </div>
     </>
   )

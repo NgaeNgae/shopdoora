@@ -3,6 +3,7 @@ import { SwiperSlide,Swiper } from 'swiper/react';
 import offer from '../offer.jpg'
 import 'swiper/css';
 import 'swiper/css/navigation'
+import { MdOutlineStar } from 'react-icons/md';
 const Product = () => {
     let data = [
         {
@@ -195,7 +196,7 @@ const Product = () => {
                          >
                             {category.data.map((product,index) => {
                                 return (
-                                    <SwiperSlide className='flex items-center h-full' key={index}>
+                                    <SwiperSlide className='flex shadow-lg transform active:scale-90 transition-transform items-center h-full' key={index}>
                                         <div className='text-center'>
                                         <img src={product.src} className="h-[170px] rounded-lg" alt={product.name} />
                                         <div className='pt-5'>
@@ -219,12 +220,12 @@ const Product = () => {
                             {category.data.map((product,index) => {
                                 return (
                                     <SwiperSlide className='mt-16' key={index}>
-                                        <div className='text-center'>
+                                        <div className='text-center shadow-lg transform active:scale-90 transition-transform'>
                                         <img src={product.src} className="h-[170px] max-sm:h-[200px] rounded-lg" alt={product.name} />
                                         <div className='pt-5'>
                                         <h1>{product.name}</h1>
                                         <h2 className='text-ms'>{product.price} MMK</h2>
-                                        <h3 className='text-xs'>{product.star} Points</h3>
+                                        <span className="flex text-xs justify-center items-center text-yellow-400"><MdOutlineStar/>{product.star} Points</span>
                                         </div>
                                         </div>
                                     </SwiperSlide>
